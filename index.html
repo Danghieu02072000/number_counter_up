@@ -13,38 +13,44 @@
 </head>
 
 <body>
-    <div class="weather">
-        <div class="weather__search">
-            <input type="text" name="" id="input-search" placeholder="Search...">
-        </div>
-        <div class="weather__location">
-            <div class="weather__city">Hanoi</div>
-            <span> , </span>
-            <div class="weather__country"> VN</div>
-        </div>
-        <div class="weather__time">
-            <div class="weather__day">12/24/2022,</div>
-            <div class="weather__hour"> 3:23:54 PM</div>
-        </div>
-        <div class="weather__temperature">
-            <span class="value_temperature">23</span><sup>o</sup>C
-        </div>
-        <h3 class="weather__title">Clouds</h3>
-        <div class="weather__desc">
-            <div class="weather__desc-item">
-                <i class="bi bi-eye"></i>
-                <span class="vision">1000 (m)</span>
+    <div class="wrapper">
+        <div class="weather">
+            <div class="weather__search">
+                <input type="text" name="" id="input-search" placeholder="Search...">
             </div>
-            <div class="weather__desc-item">
-                <i class="bi bi-wind"></i>
-                <span class="wind">2.35 (m/s)</span>
+            <div class="weather__body none">
+                <div class="weather__location">
+                    <div class="weather__city">Hanoi</div>
+                    <span> , </span>
+                    <div class="weather__country"> VN</div>
+                </div>
+                <div class="weather__time">
+                    <div class="weather__day">12/24/2022,</div>
+                    <div class="weather__hour"> 3:23:54 PM</div>
+                </div>
+                <div class="weather__temperature">
+                    <span class="value_temperature">23</span><sup>o</sup>C
+                </div>
+                <h3 class="weather__title">Clouds</h3>
+                <div class="weather__desc">
+                    <div class="weather__desc-item">
+                        <i class="bi bi-eye"></i>
+                        <span class="vision">1000 (m)</span>
+                    </div>
+                    <div class="weather__desc-item">
+                        <i class="bi bi-wind"></i>
+                        <span class="wind">2.35 (m/s)</span>
+                    </div>
+                    <div class="weather__desc-item">
+                        <i class="bi bi-cloud-sun-fill"></i>
+                        <span class="humidity">89 (%)</span>
+                    </div>
+                </div>
             </div>
-            <div class="weather__desc-item">
-                <i class="bi bi-cloud-sun-fill"></i>
-                <span class="humidity">89 (%)</span>
-            </div>
+    
         </div>
     </div>
+
 </body>
 <script src="main.js"></script>
 </html>
