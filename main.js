@@ -7,8 +7,10 @@ const temperature = document.querySelector('.value_temperature');
 const vision = document.querySelector('.vision');
 const wind = document.querySelector('.wind');
 const humidity = document.querySelector('.humidity')
+const title = document.querySelector('.weather__title')
 function changeWeatherAPI() {
-    let API = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=5fb34d5374022cf6c2b396ad4f44b9bd';
+    let value = input.value.trim()
+    let API = `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=5fb34d5374022cf6c2b396ad4f44b9bd`;
     fetch(API)
     .then(function(res){
        return res.json()
@@ -19,8 +21,14 @@ function changeWeatherAPI() {
         temperature.innerText = Math.round(data.main.temp - 273.15) 
         vision.innerText = data.visibility + 'm'
         wind.innerText = data.wind.speed + 'm/s'
-        humidity.innerHTML = data.main.humidity + '%'
+        humidity.innerText = data.main.humidity + '%'
+        title.innerText = data.weather[0].main
     })
     
 }
-changeWeatherAPI()
+
+input.addEventListener('keypress', function(e) {
+    if(e.code == 'Enter') {
+        changeWeatherAPI()
+    }
+})

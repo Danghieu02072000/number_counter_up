@@ -45,6 +45,7 @@ body {
     font-weight: 700;
     color: #fff;
     text-shadow: 2px 2px rgba(0,0,0,0.3);
+    flex-wrap: wrap;
     gap: 10px;
 }
 .weather__city {
