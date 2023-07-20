@@ -5,14 +5,14 @@
 }
 body {
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(img/hot.png) no-repeat center/cover;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(img/hot.png) no-repeat center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
 }
 .weather {
-    width: 330px;
+    width: 300px;
     background-color: #fff;
     margin: 0 auto;
     margin-top: 50px;
@@ -74,19 +74,17 @@ body {
     margin-top: 20px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
-}
-.value_temperature {
-
     font-size: 55px;
     color: #fff;
     font-weight: 700;
     text-shadow: 3px 3px rgba(0,0,0,0.3);
-
 }
+
 .weather__title {
     padding: 20px 0;
     font-size: 34px;
     color: #fff;
+    text-shadow: 2px 2px rgba(0,0,0,0.3);
 }
 .weather__desc {
     display: flex;
